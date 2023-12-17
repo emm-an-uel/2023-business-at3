@@ -1,0 +1,403 @@
+/* General rules */
+html {
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Header */
+header {
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+  border-bottom: 1px solid white;
+}
+
+header .logo {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Nova Square', sans-serif;
+  width: 26rem;
+}
+
+header .nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  float:left;
+  margin-left: 1rem;
+}
+
+header .nav-bar a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.15s,
+  font-weight 0.15s
+}
+
+header .nav-bar a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Main body */
+.main-body {
+  position: relative;
+  top: 5.778rem;
+}
+
+/* Home */ 
+.pitch-container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* The Business */
+.cover-container {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10rem; /* to fix alignments due to top offet of .vision-container */
+}
+
+#cover-img {
+  width: 40%;
+  align-self: center; /* prevents stretching and squishing */
+  position: relative;
+  left: 5rem;
+}
+
+.vision-container {
+  position: relative;
+  right: 5rem;
+  top: 10rem;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #e8e8e895;
+  min-width: 40rem;
+  max-height: 30rem;
+  padding: 1rem 2.5rem;
+}
+
+.vision-container h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#vision,
+#mission {
+  width: 15rem;
+}
+
+.values {
+  max-width: 20rem;
+}
+
+.values p {
+  font-style: italic;
+  margin: 0;
+}
+
+.values h3 {
+  margin: 0.7rem 0 0.2rem 0;
+}
+
+/* About */
+.about-container {
+  background-color: orange;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 0;
+  min-width: 550px;
+}
+
+.about-text-container {
+  max-width: 30rem;
+  margin: 0 2rem 2rem 0;
+}
+
+.about-container p {
+  text-align: justify;
+}
+
+.features-list-container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 686px) {
+  .features-list-container {
+    position: relative;
+    top: 1rem; /* top offset for narrower screen sizes */
+  }
+}
+
+.features-list {
+  height: fit-content;
+}
+
+#truck-image {
+  min-width: 15rem;
+  max-width: 30rem;
+}
+
+/* The Business - main content */
+.thebusiness-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+}
+
+.thebusiness-main-container img {
+  width: 100%;
+}
+
+#business-operation-image {
+  width: 60%;
+}
+
+.main-sub-container {
+  width: 48%;
+  text-align: justify;
+}
+
+#sub-left-container {
+  margin-right: 2%;
+}
+
+#sub-right-container {
+  margin-left: 2%;
+}
+
+#pestle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#pestle-image {
+  width: 60%;
+}
+
+@media only screen and (max-width: 715px) {
+  /* display contents as one column in main body instead of two */
+  .thebusiness-main-container {
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+
+  .main-sub-container {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  #sub-left-container {
+    margin-right: 0; /* remove left-right margins */
+  }
+  
+  #sub-right-container {
+    margin-left: 0;
+  }
+}
+
+
+
+/* The Market */
+.container {
+  padding: 0 10rem;
+}
+
+#customer-analysis-container {
+  margin-bottom: 3.5rem;
+}
+
+#customer-analysis-data-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+}
+
+#customer-analysis-data-container img {
+  height: 30rem;
+}
+
+#marketing-strategy-container {
+  background-color: #f1f1f1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+#marketing-strategy-container p {
+  background-color: #ffffff80;
+  padding: 1.5rem;
+  width: 25%;
+  min-width: 12rem;
+  height: fit-content;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+#marketing-data-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#marketing-strategy-container img {
+  width: 25rem;
+}
+
+#competitor-analysis-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#competitor-analysis-img {
+  height: 35rem;
+}
+
+#competitor-analysis-inner-container p {
+  text-align: justify;
+}
+
+#competitor-analysis-image-container {
+  width: 55%;
+  max-width: 604.65px;
+  overflow-x: scroll;
+  margin-right: 1%;
+}
+
+#competitor-analysis-text-container {
+  width: 44%;
+  padding-top: 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+  /* convert to single column */
+  #competitor-analysis-inner-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #competitor-analysis-image-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  #competitor-analysis-text-container {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+
+
+
+/* The Strategy */
+#strategy-container {
+  margin: 0 10rem;
+}
+
+#the-strategy-image-container {
+  width: 85%;
+  max-width: 60rem;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+#the-strategy-image {
+  width: 100%;
+  min-width: 40rem;
+}
+
+
+
+
+/* The Finances */
+#the-finances-container {
+  margin: 0 10rem;
+  display: flex;
+}
+
+.finances-image {
+  width: 100%;
+}
+
+.finances-sub-container {
+  width: 48%;
+  margin: 0 auto;
+}
+
+#income-statement-image {
+  width: 70%;
+}
+
+#finances-text-container {
+  margin: 2rem 10rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width:1035px) {
+  /* convert to single column */
+  #the-finances-container {
+    flex-direction: column;
+  }
+
+  .finances-sub-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+
+
+
+/* Footer */
+footer {
+  padding: 1rem 0; 
+}
+
+footer h3,
+footer h4 {
+  text-align: center;
+}
+
+footer h3 {
+  font-family: 'Nova Square', sans-serif;
+}
